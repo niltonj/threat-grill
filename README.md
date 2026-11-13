@@ -30,6 +30,38 @@ Se o upload de uma skill independente não estiver disponível, use o fluxo de p
 
 Esse caminho requer que o Plugin Creator esteja habilitado e que sua conta tenha permissão para criar plugins. Veja [Build plugins](https://learn.chatgpt.com/docs/build-plugins). A documentação também descreve a disponibilidade de skills independentes por superfície em [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
+## Instalação como Skill no Codex
+
+Para instalar como skill do Codex, copie os arquivos deste repositório para:
+
+- Linux/macOS: `~/.codex/skills/threat-grill/`
+- Instalação personalizada: `$CODEX_HOME/skills/threat-grill/`
+
+A pasta deve conter `SKILL.md`, `agents/openai.yaml` e `assets/icon.svg`.
+
+## Instalar no Claude Code
+
+O `SKILL.md` da Threat Grill pode ser usado pelo Claude Code, mas deve ficar na pasta de skills dele. O arquivo `agents/openai.yaml` é metadado opcional para ChatGPT/Codex e não é necessário para o Claude Code.
+
+### Instalação pessoal
+
+Clone o repositório na pasta de skills do usuário:
+
+```bash
+git clone https://github.com/niltonj/threat-grill.git ~/.claude/skills/threat-grill
+
+### Instalação em um projeto
+Para disponibilizar a skill a quem trabalha no projeto, coloque seus arquivos em:
+
+<raiz-do-projeto>/.claude/skills/threat-grill/SKILL.md
+
+Inclua também os arquivos de apoio da skill, se houver, e versione a pasta .claude/skills/threat-grill/ no Git.
+
+### Usar
+
+No Claude Code, digite:
+/threat-grill
+
 ## Como usar
 
 Comece com uma arquitetura, aplicação, API, infraestrutura ou fluxo. Por exemplo:
