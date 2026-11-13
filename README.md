@@ -47,20 +47,21 @@ O `SKILL.md` da Threat Grill pode ser usado pelo Claude Code, mas deve ficar na 
 
 Clone o repositório na pasta de skills do usuário:
 
-```bash
-git clone https://github.com/niltonj/threat-grill.git ~/.claude/skills/threat-grill
+`bash
+git clone https://github.com/niltonj/threat-grill.git ~/.claude/skills/threat-grill`
 
 ### Instalação em um projeto
 Para disponibilizar a skill a quem trabalha no projeto, coloque seus arquivos em:
 
-<raiz-do-projeto>/.claude/skills/threat-grill/SKILL.md
+`<raiz-do-projeto>/.claude/skills/threat-grill/SKILL.md`
 
 Inclua também os arquivos de apoio da skill, se houver, e versione a pasta .claude/skills/threat-grill/ no Git.
 
 ### Usar
 
 No Claude Code, digite:
-/threat-grill
+
+`/threat-grill`
 
 ## Como usar
 
