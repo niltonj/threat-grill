@@ -1,0 +1,14 @@
+interface:
+  display_name: Threat Grill
+  short_description: Questione arquiteturas e modele ameaças reais
+  default_prompt: Use $threat-grill para questionar minha arquitetura, com uma pergunta
+    de múltipla escolha por vez, e emitir um relatório priorizado com classificação STRIDE.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
